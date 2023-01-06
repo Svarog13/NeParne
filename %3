@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+void main()
+{
+	/*Написати програму, яка знаходить суму всіх цілих непарних чисел у діапазоні, зазначеному користувачем*/
+	int BGN, END, SUM = 0;
+	cout << "Enter the biapason: " << endl;
+	cin >> BGN >> END;
+	int i = BGN;
+	do
+	{
+		if ((i % 2) != 0)
+			SUM += i;
+		i++;
+	} while (i <= END);
+	cout << "Result " << SUM;
+}
